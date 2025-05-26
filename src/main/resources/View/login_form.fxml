@@ -4,6 +4,7 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,23 +15,21 @@
 <AnchorPane prefHeight="554.0" prefWidth="480.0" style="-fx-background-color: #B4D4FF;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.loginController">
 
     <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SCALE" fill="#ffffff00" height="515.0" layoutX="22.0" layoutY="22.0" nodeOrientation="LEFT_TO_RIGHT" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="440.0" AnchorPane.rightAnchor="18.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SCALE" fill="#ffffff00" height="515.0" layoutX="22.0" layoutY="22.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.36" stroke="#3d0543" strokeType="INSIDE" strokeWidth="4.0" width="440.0" AnchorPane.rightAnchor="18.0">
          <effect>
             <GaussianBlur radius="22.96" />
          </effect>
       </Rectangle>
-      <ImageView fitHeight="481.0" fitWidth="377.0" pickOnBounds="true">
-         <image>
-            <Image url="@../assests/gif3.gif" />
-         </image>
-      </ImageView>
-        <TextField fx:id="txtUserName" alignment="CENTER" layoutX="57.0" layoutY="384.0" onAction="#userNameOnAction" opacity="0.51" prefHeight="48.0" prefWidth="365.0" promptText="Enter Your User Name" style="-fx-background-color: #ffffff;">
+        <TextField fx:id="txtUserName" alignment="CENTER" layoutX="57.0" layoutY="384.0" onAction="#userNameOnAction" prefHeight="48.0" prefWidth="365.0" promptText="Enter Your User Name" style="-fx-background-color: #ffffff;">
             <font>
                 <Font name="DejaVu Serif Bold" size="18.0" />
             </font>
             <cursor>
                 <Cursor fx:constant="TEXT" />
             </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
         </TextField>
         <JFXButton fx:id="btnlogin" alignment="CENTER" buttonType="RAISED" layoutX="178.0" layoutY="459.0" onAction="#btnLoginOnAction" prefHeight="34.0" prefWidth="124.0" style="-fx-background-color: #34495E;" text="Log In" textFill="#f2efef">
             <font>
@@ -45,5 +44,10 @@
             <Font name="System Bold" size="36.0" />
          </font>
       </Text>
+      <ImageView fitHeight="305.0" fitWidth="278.0" layoutX="81.0" layoutY="75.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/black-cat-gif-2.gif" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

@@ -44,11 +44,6 @@
                 </GridPane>
             </children>
         </AnchorPane>
-        <ImageView blendMode="MULTIPLY" fitHeight="37.0" fitWidth="32.0" layoutX="378.0" layoutY="623.0" pickOnBounds="true" smooth="false">
-            <image>
-                <Image url="@../assests/send.png" />
-            </image>
-        </ImageView>
         <JFXButton fx:id="btnSend" layoutX="375.0" layoutY="620.0" onAction="#btnSendOnAction" prefHeight="43.0" prefWidth="39.0" text=" ">
             <cursor>
                 <Cursor fx:constant="HAND" />
